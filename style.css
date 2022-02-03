@@ -1,0 +1,41 @@
+.modal-outer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.main{
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.modal-inner{
+  width: 500px;
+  height: 500px;
+  background-color: #E0E0E0;
+  text-align: center;
+  position: relative;
+}
+img{
+  width: 300px;
+  height: 300px;
+}
+.close-button{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.modal-outer.open{
+  opacity: 1;
+  pointer-events: all;
+}
